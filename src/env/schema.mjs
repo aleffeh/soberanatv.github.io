@@ -1,5 +1,5 @@
 // @ts-check
-import { z } from "zod";
+import {z} from "zod";
 
 /**
  * Specify your server-side environment variables schema here.
@@ -15,5 +15,5 @@ export const serverSchema = z.object({
  * To expose them to the client, prefix them with `NEXT_PUBLIC_`.
  */
 export const clientSchema = z.object({
-  // NEXT_PUBLIC_CLIENTVAR: z.string(),
+
 });
