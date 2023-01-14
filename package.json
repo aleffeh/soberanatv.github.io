@@ -6,9 +6,11 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "update-db-schema": "npx supabase gen types typescript --project-id \"ugqmjgjuidktnsqcpvvs\" --schema public > src/server/api/supabase/schema.ts"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.4.0",
     "@tanstack/react-query": "^4.20.0",
     "@trpc/client": "^10.8.1",
     "@trpc/next": "^10.8.1",
@@ -31,6 +33,7 @@
     "babel-plugin-styled-components": "^2.0.7",
     "eslint": "^8.30.0",
     "eslint-config-next": "13.1.1",
+    "supabase": ">=1.8.1",
     "typescript": "^4.9.4"
   },
   "ct3aMetadata": {

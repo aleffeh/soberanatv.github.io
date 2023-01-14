@@ -1,6 +1,6 @@
 import {type AppType} from "next/app";
 
-import {api} from "utils";
+import {api} from "service";
 import {GlobalStyle, Header} from "components";
 
 

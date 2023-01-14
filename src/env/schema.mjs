@@ -6,7 +6,9 @@ import {z} from "zod";
  * This way you can ensure the app isn't built with invalid env vars.
  */
 export const serverSchema = z.object({
-  NODE_ENV: z.enum(["development", "test", "production"]),
+    NODE_ENV: z.enum(["development", "test", "production"]),
+    SUPABASE_URL: z.string(),
+    SUPABASE_KEY: z.string(),
 });
 
 /**
@@ -14,6 +16,4 @@ export const serverSchema = z.object({
  * This way you can ensure the app isn't built with invalid env vars.
  * To expose them to the client, prefix them with `NEXT_PUBLIC_`.
  */
-export const clientSchema = z.object({
-
-});
+export const clientSchema = z.object({});
